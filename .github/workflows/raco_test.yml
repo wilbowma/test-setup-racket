@@ -27,6 +27,9 @@ jobs:
       continue-on-error: true
       run: |
         raco pkg install --batch --auto ./foo/dummy-lib
+    - name: Fix up
+      run: |
+        raco pkg remove --batch dummy-lib
     - name: Setup then build
       run: |
         sudo raco setup
