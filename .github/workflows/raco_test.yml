@@ -19,12 +19,4 @@ jobs:
         architecture: 'x64'
         distribution: 'minimal'
         version: 7.4
-    - name: Checkout
-      uses: actions/checkout@main
-    - name: Build lib
-      run: |
-        raco pkg install --batch --auto scribble-bettergrammar-lib
-    - name: Test lib
-      run: |
-        raco test -p scribble-bettergrammar-lib
-        raco setup --only --pkgs scribble-bettergrammar-lib
+        packages: 'compiler-lib'
