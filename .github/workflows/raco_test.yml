@@ -25,4 +25,4 @@ jobs:
         path: foo
     - name: build
       run: |
-        raco pkg install ./foo/dummy-lib
+        raco pkg install --batch --auto ./foo/dummy-lib
