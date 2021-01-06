@@ -19,4 +19,5 @@ jobs:
         architecture: 'x64'
         distribution: 'minimal'
         version: 7.4
-        packages: 'compiler-lib'
+    - name: Try to use syntax/readerr
+      run: racket -e "(require syntax/readerr)"
