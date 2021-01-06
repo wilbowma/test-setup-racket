@@ -18,7 +18,7 @@ jobs:
       with:
         architecture: 'x64'
         distribution: 'minimal'
-        version: stable
+        version: 7.4
     - name: Checkout
       uses: actions/checkout@main
     - name: Build lib
