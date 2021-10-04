@@ -18,7 +18,7 @@ jobs:
       with:
         architecture: 'x64'
         distribution: 'minimal'
-        version: 7.4
+        version: 8.2
     - name: Checkout
       uses: actions/checkout@v2
       with:
